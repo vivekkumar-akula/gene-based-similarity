@@ -1,0 +1,24 @@
+[A] Data processing ...
+    CTD 5849 diseases | OMIM 10 nodes | NCBI 11 seqs
+    A6 id-map: 9118 NCBI ids | 0 UniProt | 40 OMIM gene #
+[B] Data modelling ...
+    graph nodes=14975 edges=34295 homology=1
+[C] Data evaluation ...
+
+======================================================================
+D1 = 'Breast Neoplasms' -> Breast Neoplasms [MESH:D001943]
+D2 = 'Pancreatic Neoplasms' -> Pancreatic Neoplasms [MESH:D010190]
+  genes(D1)=548 genes(D2)=106 shared=39
+  shared: AHR, ATM, BAP1, BRCA1, BRCA2, CCL20, CDH1, CDKN2A, CNR2, CTNNB1, CXCL8, CYP2B1, DPYD, EFEMP1, EGFR, HIF1A, IL24, KDR, KRAS, MMP2 ...
+  [A6] gene ID table (39 genes) -> /sessions/loving-exciting-hawking/mnt/outputs/Project1/shared_genes_ids.csv
+       Gene     NCBI      OMIM        UniProt
+       AHR      196       600253      -
+       ATM      472       607585      -
+       BAP1     8314      603089      -
+       BRCA1    672       113705      -
+       BRCA2    675       600185      -
+       ...
+  [C1 baseline]  Jaccard         = 0.063
+  [C1 baseline]  weighted cosine = 0.122
+  [C2 ML]        node2vec (raw)  = 0.683
+  [C3 ML]        score (calib)   = 0.385  -> ~0.2 (not really similar)

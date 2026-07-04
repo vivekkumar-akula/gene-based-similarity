@@ -1,0 +1,16 @@
+# Python packages for Project-1 (install:  pip install -r requirements.txt)
+numpy
+scipy
+networkx
+gensim
+scikit-learn
+pandas
+matplotlib
+notebook
+biopython        # for the real-BLAST (A5) route: online qblast / result parsing
+
+# --- NOT a pip package (install separately for LOCAL real BLAST) ---
+# NCBI BLAST+ command-line toolkit  (provides: blastp, makeblastdb)
+#   Windows/Mac/Linux download: https://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/
+#   or:  conda install -c bioconda blast
+# Only needed if you run:  python3 project1_disease_similarity.py run ... --blast
