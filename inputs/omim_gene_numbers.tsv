@@ -1,0 +1,47 @@
+# OMIM gene MIM numbers  (LINK 2: https://omim.org/)
+# Maps a gene symbol to its OMIM *gene* entry number (different from the
+# NCBI Entrez GeneID and from OMIM *disease* numbers).
+# Authoritative source: OMIM mim2gene.txt  (https://omim.org/static/omim/data/mim2gene.txt)
+# 'n/a' = non-human (rodent) ortholog present in CTD; no human OMIM entry.
+# Columns (TAB-separated): GeneSymbol  OMIM_Gene_Number
+GeneSymbol	OMIM_Gene_Number
+AHR	600253
+ATM	607585
+BAP1	603089
+BRCA1	113705
+BRCA2	600185
+CCL20	601960
+CDH1	192090
+CDKN2A	600160
+CNR2	605051
+CTNNB1	116806
+CXCL8	146930
+CYP2B1	n/a
+DPYD	612779
+EFEMP1	601548
+EGFR	131550
+HIF1A	603348
+IL24	604136
+KDR	191306
+KRAS	190070
+MMP2	120360
+MMP9	120361
+NFKBIA	164008
+PALB2	610355
+PTEN	601728
+PTGS2	600262
+PTHLH	168470
+RB1	614041
+SOD2	147460
+STAT3	102582
+TERT	187270
+TFPI2	600033
+TGM2	190196
+TNF	191160
+TNFSF10	603598
+TP53	191170
+TRP53	n/a
+TYMS	188350
+VEGFB	601398
+WT1	607102
+BARD1	601593
