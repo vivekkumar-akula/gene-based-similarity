@@ -1,0 +1,46 @@
+# ============================================================================
+# OMIM input file  (LINK 2:  https://omim.org/)
+# ----------------------------------------------------------------------------
+# SIMPLIFIED extract of OMIM's disease->gene relationships, in the same spirit
+# as OMIM's downloadable files genemap2.txt / morbidmap.txt.
+#
+# HOW TO GET THE REAL / FULL FILE:
+#   1. Register (free, academic) at https://omim.org/downloads
+#   2. Download  genemap2.txt  and  morbidmap.txt
+#   3. Public MIM number -> NCBI Entrez GeneID map:
+#        https://omim.org/static/omim/data/mim2gene.txt
+#        mirror: https://ftp.ncbi.nlm.nih.gov/gene/DATA/mim2gene_medgen
+#   load_omim() can be pointed at the real file; only column indices change.
+#
+# WHY IT MATTERS: OMIM adds curated disease->gene edges that confirm/expand CTD
+# and lets you resolve a disease given AS AN OMIM NUMBER (e.g. 607822 = AD3).
+#
+# Columns (TAB-separated): PhenotypeMIM  PhenotypeName  GeneSymbol  GeneID
+# GeneID = NCBI Entrez Gene ID, so this JOINS directly to the CTD file and to
+# the NCBI FASTA headers below.
+# ============================================================================
+PhenotypeMIM	PhenotypeName	GeneSymbol	GeneID
+114480	Breast cancer	BRCA1	672
+114480	Breast cancer	BRCA2	675
+114480	Breast cancer	ATM	472
+114480	Breast cancer	CHEK2	11200
+114480	Breast cancer	TP53	7157
+114480	Breast cancer	PALB2	79728
+114480	Breast cancer	BARD1	580
+114480	Breast cancer	RAD51C	5889
+604370	Breast-ovarian cancer, familial, 1	BRCA1	672
+612555	Breast-ovarian cancer, familial, 2	BRCA2	675
+260350	Pancreatic cancer	KRAS	3845
+260350	Pancreatic cancer	CDKN2A	1029
+260350	Pancreatic cancer	BRCA2	675
+260350	Pancreatic cancer	PALB2	79728
+260350	Pancreatic cancer	STK11	6794
+260350	Pancreatic cancer	ATM	472
+260350	Pancreatic cancer	TP53	7157
+613347	Pancreatic cancer 2	BRCA2	675
+613348	Pancreatic cancer 3	PALB2	79728
+606719	Melanoma-pancreatic cancer syndrome	CDKN2A	1029
+175200	Peutz-Jeghers syndrome	STK11	6794
+607822	Alzheimer disease 3	PSEN1	5663
+607822	Alzheimer disease 3	APOE	348
+104310	Alzheimer disease 2	APOE	348
